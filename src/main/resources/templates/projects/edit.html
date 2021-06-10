@@ -54,7 +54,7 @@
 
             <div class="inner pull-right mt-3">
                 <button type="submit"
-                        class="btn btn-primary"
+                        class="btn btn-success"
                         th:text="#{common.save}"></button>
                 <a class="btn btn-danger"
                    th:if="${project.id} and ${#authorization.expression('hasRole(''ROLE_DELETE_PROJECT'')')}"

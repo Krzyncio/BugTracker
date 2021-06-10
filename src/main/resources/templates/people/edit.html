@@ -77,7 +77,7 @@
                         <input id="password"
                                type="password"
                                th:field="*{password}"
-                               placeholder="janko123"
+                               placeholder="zaq1@WSX"
                                th:class="'form-control ' + ${#fields.hasErrors('password') ? 'is-invalid' : ''}"/>
                         <small class="text-danger"
                                th:if="${#fields.hasErrors('password')}"
@@ -94,7 +94,7 @@
                         <input id="repeated-password"
                                type="password"
                                th:field="*{repeatedPassword}"
-                               placeholder="janko123"
+                               placeholder="zaq1@WSX"
                                th:class="'form-control ' + ${#fields.hasErrors('repeatedPassword') ? 'is-invalid' : ''}"/>
                         <small class="text-danger"
                                th:if="${#fields.hasErrors('repeatedPassword')}"
@@ -118,7 +118,7 @@
             </div>
             <div class="inner pull-right">
                 <button type="submit"
-                        class="btn btn-primary"
+                        class="btn btn-success"
                         th:text="#{common.save}"></button>
                 <a class="btn btn-danger"
                    th:if="${#authorization.expression('hasRole(''ROLE_DELETE_USER'')')}"
